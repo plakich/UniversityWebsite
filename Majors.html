@@ -1,0 +1,94 @@
+<!--
+	Home page
+-->
+
+<html>
+	<head>
+		<title>JSU - Majors</title>
+		<style>
+			.nav_bar{
+				margin: auto;
+				padding: 0px 20px 0px 20px;
+			}
+			.nav_bar ul{
+				padding: 0;
+				list-style: none;
+			}
+			.nav_bar ul li{
+				float:left;
+				font-size: 16px;
+				font-weight: bold;
+				margin-right: 10px;
+			}
+			.nav_bar ul li a{
+				text-decoration: none;
+				color: #000000;
+				background: #6db1e4;
+				border: 1px solid #000000;
+				border-bottom: none;
+				padding: 20px 20px 20px 20px;
+			}
+
+			.subdata
+			{
+				padding: 20px 20px 20px 20px;
+				background-color:#bafffc;
+				border: 1px solid #000000;
+				border-top:none;
+			}
+		</style>
+		<link rel="stylesheet" href="bootstrap.css" type="text/css"/>
+	</head>
+	<body ng-app="Major">
+		<div class="header">
+		  <div align="center">
+		    <img src="Navigationbar1.png" usemap="#nav"/>
+		      <map name="nav" id="">
+		        <area href="home.jsp" shape="rect" coords="267,117,530,0" />
+		        <area href="enroll.jsp" shape="rect" coords="545,117,758,0" />
+		        <area href="Majors.html" shape="rect" coords="765,117,1010,0" />
+		        <area href="login.jsp" shape="rect" coords="1020,117,1206,0" />
+		      </map>
+		  </div>
+		</div>
+		<hr/><br/><br/>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Please Select a Major to see details <br/><br/><br/>
+		<div class="nav_bar">
+				<ul>
+					<li><a href="#CS"> CS </a></li>
+					<li><a href="#Math"> Math </a></li>
+					<li><a href="#English"> English </a></li>
+					<li><a href="#ECE"> ECE </a></li>
+				</ul>
+		</div>
+		<br/><br/>
+		<div ng-view>
+		</div>
+
+		<script src="angular.js"></script>
+		<script src="angular-route.min.js"></script>
+
+		<script>
+			angular.module('Major', ['ngRoute'])
+			.config(['$routeProvider', function($routeProvider) {
+				$routeProvider
+					.when('/CS',{
+						templateUrl: 'CS.html'
+					})
+					.when('/Math', {
+						templateUrl: 'Math.html'
+					})
+					.when('/English',{
+						templateUrl: 'English.html'
+					})
+					.when('/ECE',{
+						templateUrl: 'ECE.html'
+					})
+					.otherwise({
+						redirectTo: '/Math.html'
+					});
+			}]);
+		</script>
+	</body>
+</html>
