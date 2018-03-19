@@ -15,7 +15,7 @@ I volunteered to be the project manager for this project, so what I did was star
 <hr>
 The auth system built into the site is simplistic: we decided to use a cookie system--which actually worked more like tokens, since session ids weren't stored in the database--that would store a different cookie depending on the type of user. Pages cannot be accessed unless first logged in, and only the correct type of user could access certain pages: the professor's homepage was different from the students, so they had to be logged in as a professor to accomplish this. 
 
-<h2> Caveats <h2>
+<h2> Caveats </h2>
 <hr>
 The database design did not follow any normalization principles, simply because I was not aware of them at the time (I had taken a database management class the previous semester and it did not cover the topic). I only later learned about them, since during the course of developing the database for the project and managing it, I encountered a lot of the anomolies the principles were meant to address--such as insert anomolies. Also, as before in the airline project, the code is very WET, as I never could figure out how to properly create working templates--nothing ever displayed properly, and I abondoned the effort since using IntelliJ IDEA made it easy to create its own "templates" (just a new jsp file with the bare-bones html and the code I needed pasted in). I would have had to change it for a production environment, but I made do with it here since it wouldn't be counted against us. 
 
