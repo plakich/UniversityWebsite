@@ -5,7 +5,7 @@
 
 <p>This project was developed as part of a team effort for a class in software engineering. All the code uploaded here (including the database) is my own, except for the static html pages that display each major's classes and the add courses page (the add courses page was developed by team member Drake and reworked by me). The rest of the features discussed below are not included, only the bare-bones features to demonstrate the working site. </p>
 
-<h2> The Story </h2>
+<h2> The Story Behind the Project </h2>
 <hr>
 
 <p>The major challenge of this project was this: how do you develop a fully complete university website (front- and back-end) with a team of members who mostly never touched HTML, CSS, SQL, or JavaScript? This was developed in the spring semester of 2017, and during the previous semester, I faced a similar situation: with the help of a good textbook, several online tutorials, and dozens of stackoverflow posts, I was able to learn the basics and complete the project on time.</p>
