@@ -3,7 +3,7 @@
 <h1> Introduction </h1>
 <hr>
 
-<p>This project was developed as part of a team effort for a class in software engineering. All the code uploaded here (including the database) is my own, except for the static html pages that display each major's classes and the add courses page (the add courses page was developed by team member Drake and reworked by me). The rest of the features discussed below are not included, only the bare-bones features to demonstrate the working site. </p>
+<p>This project was developed as part of a team effort for a class in software engineering. All the code uploaded here (including the database) is my own, except for the static html pages that display each major's classes and the add courses page (the add courses page was developed by another team member and reworked by me). The rest of the features discussed below are not included, only the bare-bones features to demonstrate the working site. </p>
 
 <h2> The Story Behind the Project </h2>
 <hr>
@@ -14,7 +14,7 @@
 
 <h2> Authentication and Authorization </h2> 
 <hr>
-<p>The auth system built into the site is simplistic: we decided to use a cookie system--which actually worked more like tokens, since session ids weren't stored in the database--that would store a different cookie depending on the type of user. Pages cannot be accessed unless first logged in, and only the correct type of user could access certain pages: the professor's homepage was different from the students, so they had to be logged in as a professor to accomplish this.</p>
+<p>The auth system built into the site is simplistic: we decided to use a cookie system--which actually worked more like tokens, since session ids weren't stored in the database--that would store a different cookie depending on the type of user. Pages cannot be accessed unless first logged in, and only the correct type of user could access certain pages: the professor's homepage was different from the student's, so they had to be logged in as a professor to accomplish this.</p>
 
 <h2> Caveats </h2>
 <hr>
